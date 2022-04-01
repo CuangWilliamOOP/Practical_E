@@ -9,6 +9,12 @@ int sum_sides(int **vals,int n_rows, int n_cols){
 		
 	}
 
+	for (int i = 0; i < n_rows; i++ ){
+		sum2 += vals[i][n_cols];
+		
+	}
+
+
 	return sum1+ sum2;
 
 }
