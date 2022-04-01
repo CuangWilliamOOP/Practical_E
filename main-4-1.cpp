@@ -6,8 +6,9 @@ int main(){
     int row2[]={11,5,3};
     int row3[]={8,56,1};
     int *vals[]={row1,row2,row3};
-    int ncols=3;
-    int nrows=3;
-std::cout <<  sum_sides(vals,nrows,ncols);
+    int n_cols=3;
+    int n_rows=3;
+
+std::cout <<  sum_sides(vals,n_rows,n_cols);
 
 }
