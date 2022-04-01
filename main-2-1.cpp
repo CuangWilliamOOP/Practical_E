@@ -1,5 +1,5 @@
 #include <iostream>
-extern std::string lookup_month(int month);
+extern std::string lookup_month(int day);
 
 
 int main(){
