@@ -5,11 +5,11 @@ int sum_sides(int **vals,int n_rows, int n_cols){
 	int sum2 = 0;
 
 	for (int i = 0; i < n_rows; i++ ){
-		sum1 += vals[i][1];
+		sum1 += vals[i][0];
 	}
 
 	for (int i = 0; i < n_rows; i++ ){
-		sum2 += vals[i][n_cols];
+		sum2 += vals[i][n_cols-1];
 		
 	}
 
