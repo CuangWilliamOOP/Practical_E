@@ -42,7 +42,8 @@ std::string lookup_month(int day){
 			return "Dec";
 			break;	
 		default:
-			return "Invalid month";							
+			return "invalid month";	
+									
 
 	} 
 
