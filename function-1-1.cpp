@@ -3,11 +3,13 @@
 
 std::string* create_strings(int num_vals){
 
-	std::string* array = new std::string[num_vals];
+	std::string* value;
+	value = new std::string[num_vals];
 	for(int i = 0; i < num_vals; i++){
-		array[i] = std::to_string(i);
+		value[i] = std::to_string(i);
 
-	}return array;
+	}
+return value;
 }
 
 void display_array(std::string *vals, int num_vals){
@@ -16,5 +18,5 @@ void display_array(std::string *vals, int num_vals){
 		std::cout << vals[i] << " ";
 	}
 
-
+		std::cout << std::endl;
 }

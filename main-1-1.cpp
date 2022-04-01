@@ -7,7 +7,7 @@ extern void display_array(std::string *vals, int num_vals);
 int main(){
 
 int num_vals = 3;
-std::string *vals = create_strings(num_vals);
+std::string *vals = create_strings(3);
 display_array(vals, num_vals);
 
 }
