@@ -1,11 +1,11 @@
 #include <iostream>
 
-int sum_sides(int **vals,int num_rows, int num_cols){
+int sum_sides(int **vals,int n_rows, int n_cols){
 	int sum1 = 0;
 	int sum2 = 0;
-	for (int i = 0; i < num_rows; i++ ){
+	for (int i = 0; i < n_rows; i++ ){
 		sum1 += vals[i][1];
-		sum2 += vals[i][num_cols];
+		sum2 += vals[i][n_cols];
 		
 	}
 
