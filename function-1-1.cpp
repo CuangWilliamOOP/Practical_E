@@ -13,7 +13,7 @@ std::string* create_strings(int num_vals){
 void display_array(std::string *vals, int num_vals){
 
 	for(int i = 0; i < num_vals; i++){
-		std::cout << vals[i];
+		std::cout << vals[i] << " ";
 	}
 
 
