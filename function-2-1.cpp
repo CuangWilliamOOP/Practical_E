@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-std::string lookup_month(int month){
+std::string lookup_month(int day){
 
 	switch (month){
 		case 1:
