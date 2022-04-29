@@ -1,44 +1,39 @@
-#include "Unit.h"
 #include "Apartment.h"
+#include "Unit.h"
+using namespace std;
 
-Apartment::Apartment(){
-	_capacity = 10;
-	unit_array = new Unit[_capacity];
-	num_units = 0;
-}
-Apartment::Apartment(int capacity){
-	_capacity = capacity; 
-	unit_array = new Unit[_capacity];
-	num_units = 0;
-
-}
-int Apartment:: get_capacity(){
-	return _capacity;
-
-}  
-
-
-int Apartment:: get_current_number_of_units(){
-	return num_units;
-
+Apartment::Apartment() {
+	max_capacity = 10;
+	units_collection = new Unit[max_capacity];
 }
 
-Unit * Apartment::get_contents(){
-	return unit_array;
+Apartment::Apartment(int capacity) {
+	max_capacity = capacity;
+	units_collection = new Unit[max_capacity];
 }
 
 
-
-bool Apartment::add_unit(Unit unit){
-	if (num_units < _capacity){
-		unit_array[num_units] = unit;
-		num_units += 1;
-		return true;
-	}else
-	return false;
+int Apartment::get_capacity() {
+	return max_capacity;
 }
 
+int Apartment::get_current_number_of_units() {
+	return current_number;
+}
+	
+Unit* Apartment::get_contents() {
+	return units_collection;
+}
 
-Apartment::~Apartment(){
-	delete[] unit_array;
+bool Apartment::add_unit(Unit unit) {
+	if (current_number==max_capacity) {
+		return false;
+	}
+	units_collection[current_number] = unit;
+	current_number++;
+	return true;
+}
+
+Apartment::~Apartment() {
+	delete[] units_collection;
 }
