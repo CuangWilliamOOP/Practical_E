@@ -1,29 +1,23 @@
+#include <iostream>
 #include "Unit.h"
 
-using namespace std;
+Unit::Unit(){
 
-Unit::Unit() {
-	bedrooms=0;
-	value=0;
-	area=0;
+}  
+
+Unit::Unit(int bed_room, double _area, int _value){
+	bedroom = bed_room;
+	area = _area;
+	value = _value;
 }
 
+int Unit:: get_bedrooms(){
+	return bedroom;
 
-Unit::Unit(int br, double ar, int val) {
-	bedrooms= br;
-	area= ar;
-	value= val;
-}
-
-int Unit::get_bedrooms() {
-	return bedrooms;
-}
-
-double Unit::get_area() {	
+}  
+int Unit::get_value(){
+	return value;
+}  
+double Unit::get_area(){
 	return area;
 }
-
-int Unit::get_value() {
-	return value;
-}
-
