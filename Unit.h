@@ -1,10 +1,11 @@
 #ifndef UNIT_H
 #define UNIT_H
 class Unit{
+public:
 	int bedroom;
 	int value;
 	double area;
-public:
+
 	Unit();          // a default constructor 
 	Unit(int, double, int); // a constructor that takes: the number of bedrooms,
                         //number of square meters, and value in dollars as parameters

@@ -4,11 +4,12 @@
 
 
 class Apartment{
+public:
 	int _capacity;
 	Unit *unit_array;
 	int num_units;
 
-public:
+
 	Apartment();  // default constructor allocates capacity for 10 units
 	Apartment(int capacity);  // constructor for Apartment with given num units
 	int get_capacity();  // returns the  number of units allowed
