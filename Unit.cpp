@@ -8,9 +8,23 @@ Unit::Unit(){
 }  
 
 Unit::Unit(int bed_room, double _area, int _value){
-	bedroom = bed_room;
-	area = _area;
-	value = _value;
+	if(bed_room <= 0){
+		bedroom = 0;
+	}else{
+		bedroom = bed_room;
+	}
+
+	if(_area <= 0.0){
+		area = 0;
+	}else{
+		area = _area;
+	}
+
+	if(_value <= 0){
+		value = 0;
+	}else{
+		value = _value;
+	}
 }
 
 int Unit:: get_bedrooms(){
