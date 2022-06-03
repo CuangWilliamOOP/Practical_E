@@ -13,7 +13,7 @@ BookStore::BookStore(std::string n, std::string a, int nu){
 
 void BookStore::set_numBook(int book){
 	if(book < 0){
-		std::cout << error;
+		std::cout << "error";
 	}else{
 		numBook = book;
 	}

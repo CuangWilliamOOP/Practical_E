@@ -3,7 +3,7 @@
 int Dymocks::nextNumStores = 0;
 
 Dymocks::Dymocks(){}
-Dymocks::Dymocks(bool o):BooksStore("Dymocks", "", 1000){
+Dymocks::Dymocks(bool o):BookStore("Dymocks", "", 1000){
 	storeID = nextNumStores;
 	nextNumStores++;
 	isOnline = o;
@@ -34,12 +34,12 @@ void Dymocks::set_nextNumScores(int x){
 
 }
 
-bool Dymocks::set_isOnline(bool x){
+void Dymocks::set_isOnline(bool x){
 	isOnline = x;
 }
 
 
-int Dymocks::get_onlineTax(){
+float Dymocks::get_onlineTax(){
 	if(isOnline == true){
 		return 500;
 	}else{
