@@ -5,7 +5,7 @@ BookStore::BookStore(){}
 
 BookStore::BookStore(std::string n, std::string a, int nu){
 	name = n;
-	address = address;
+	address = a;
 
 	if(nu < 0){
 	numBook = 0;
