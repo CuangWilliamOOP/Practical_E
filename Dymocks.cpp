@@ -10,7 +10,7 @@ Dymocks::Dymocks(bool o):BookStore("Dymocks", "", 1000){
 
 }
 
-int Dymocks::get_StoreID(){
+int Dymocks::get_storeID(){
 
 	return storeID;
 }

@@ -13,7 +13,7 @@ public:
                      // and address equal to the empty string
 	int storeID;          // unique store ID 
 	bool isOnline;       // class attribute    
-	int get_StoreID();
+	int get_storeID();
 	int get_nextNumScores();
 	bool get_isOnline();
 	void set_storeID(int);
