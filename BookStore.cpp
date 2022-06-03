@@ -2,16 +2,21 @@
 
 
 BookStore::BookStore(){}
-BookStore::BookStore(std::string name, std::string address, int numbBook){
-	this -> name = name;
-	this -> address = address;
-	this -> numBook = numBook;
+
+BookStore::BookStore(std::string n, std::string a, int nu){
+	name = n;
+	address = address;
+	numBook = nu;
+
 }
 
 
 void BookStore::set_numBook(int book){
-
-	numBook = book;
+	if(book < 0){
+		std::cout << error;
+	}else{
+		numBook = book;
+	}
 }
 
 
