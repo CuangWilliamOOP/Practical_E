@@ -17,7 +17,7 @@ public:
 	int get_nextNumScores();
 	bool get_isOnline();
 	void set_storeID(int);
-	void set_nextNumScores(int);
+	void set_nextNumStores(int);
 	void set_isOnline(bool);
 
 

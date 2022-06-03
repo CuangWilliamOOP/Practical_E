@@ -28,7 +28,7 @@ void Dymocks::set_storeID(int x){
 	storeID = x;
 }
 
-void Dymocks::set_nextNumScores(int x){
+void Dymocks::set_nextNumStores(int x){
 
 	nextNumStores = x;
 
