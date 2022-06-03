@@ -6,5 +6,9 @@
 
 int main(){
 
+	BarnesNoble a("what");
+
+	std::cout << a.get_numSoldBooks();
+
 	return 0;
 }
