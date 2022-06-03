@@ -11,6 +11,8 @@ public:
 	StoreChain();
 	BookStore **get_bookStores();
 
+	~StoreChain();
+
 
 
 };
