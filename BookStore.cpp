@@ -1,7 +1,7 @@
 #include "BookStore.h"
 
 
-
+BookStore::BookStore(){}
 BookStore::BookStore(std::string name, std::string address, int numbBook){
 	this -> name = name;
 	this -> address = address;
