@@ -14,7 +14,7 @@ public:
 	int storeID;          // unique store ID 
 	bool isOnline;       // class attribute    
 	int get_storeID();
-	int get_nextNumScores();
+	int get_nextNumStores();
 	bool get_isOnline();
 	void set_storeID(int);
 	void set_nextNumStores(int);

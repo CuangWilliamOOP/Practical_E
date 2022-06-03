@@ -15,7 +15,7 @@ int Dymocks::get_storeID(){
 	return storeID;
 }
 
-int Dymocks::get_nextNumScores(){
+int Dymocks::get_nextNumStores(){
 
 	return nextNumStores;
 }
