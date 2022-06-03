@@ -5,7 +5,7 @@
 class BookStore{
 
 protected:
-	Bookstore();
+	BookStore();
  	BookStore(std::string,std::string,int);  // creates a BookStore name n, address a, and number of books in the store b
 public:
 	std::string name;                // the book store name
