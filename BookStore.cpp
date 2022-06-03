@@ -6,14 +6,19 @@ BookStore::BookStore(){}
 BookStore::BookStore(std::string n, std::string a, int nu){
 	name = n;
 	address = address;
-	numBook = nu;
+
+	if(nu < 0){
+	numBook = 0;
+	}else{
+		numBook = nu;
+	}
 
 }
 
 
 void BookStore::set_numBook(int book){
 	if(book < 0){
-		std::cout << "error";
+		numBook = 0;
 	}else{
 		numBook = book;
 	}

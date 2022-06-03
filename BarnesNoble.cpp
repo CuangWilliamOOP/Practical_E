@@ -7,6 +7,7 @@ BarnesNoble::BarnesNoble(){}
 BarnesNoble::BarnesNoble(std::string x): Dymocks(0){
 
 	name = x;
+	numSoldBooks = 0;
 
 }
 
